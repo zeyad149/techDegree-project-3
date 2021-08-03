@@ -1,0 +1,204 @@
+ html{
+   font-family: 'Bitter', serif;
+ }
+body{
+  width: 100%;
+  height: 100%;
+  margin: 0px;
+
+}
+fieldset{
+  border: white 0px solid;
+}
+legend{
+  font-family: 'Bitter', serif;
+  font-weight: bolder;
+  font-size: 1.4rem;
+  padding-top: 1.2rem;
+  padding-bottom: 1.2rem;
+
+}
+
+header {
+  display: flex;
+  justify-content:center;
+  background: #210124;
+  color: white;
+  padding-bottom: 15px;
+  padding-top: 15px;
+  margin-bottom: 30px;
+}
+
+.title{
+  font-size: 1.5rem;
+}
+
+.wrapper{
+  margin-right:16px;
+  margin-left:16px;
+  text-align: left;
+}
+.intro{
+  text-align: center;
+}
+
+.intro p{
+  margin-top:-12px;
+  font-family: 'Bitter', serif;
+  margin-bottom: 2rem;
+}
+hr{
+  color: #210124;
+  margin-bottom: -4px;
+}
+hr.thick {
+  border: 3px solid;
+}
+hr.thin{
+  border: 1.2px solid;
+}
+
+form{
+      font-family: 'Bitter', serif;
+      font-weight: normal;
+}
+input[type="text"],
+input[type="email"],
+input[type="tel"],
+select {
+  border-radius: 6px;
+  background-color: #FFEAEC;
+  width: 100%;
+  padding-bottom: 10px;
+  padding-top: 10px;
+  margin-top: 10px;
+  border-color: white;
+  text-decoration: none;
+}
+input[type="radio"],
+input[type="checkbox"]{
+  margin-right: 4px;
+  border-radius: 0px;
+}
+.option {
+  margin-bottom: 10px;
+}
+
+
+input[type="text"]::placeholder,
+input[type="email"]::placeholder{
+
+  font-family: 'Bitter', serif;
+  font-style: italic;
+  text-align: right;
+}
+
+input[type="text"]:focus,
+input[type="email"]:focus{
+  text-align: left;
+}
+select option[value=""]{
+  color: gray;
+
+}
+
+}
+select{
+
+  margin-bottom: 50px;
+}
+
+input[id="zipCode"]{
+  width: 50%;
+
+}
+textarea{
+  width: 100%;
+  padding-bottom: 40px;
+
+}
+input[type="button"]{
+  border-color: white;
+  border-radius: 6px;
+  font-family: 'Bitter', serif;
+  width: 100%;
+  padding-top: 15px;
+  padding-bottom:15px;
+  background-color: green;
+  color: white;
+  font-size: 2rem;
+  font-weight: 400;
+}
+
+footer{
+  margin-top: 15px;
+  text-align: center;
+  font-family: 'Bitter', serif;
+  font-style: italic;
+  padding-bottom: 4rem;
+
+}
+
+@media(min-width: 768px){
+
+  .wrapper{
+    margin-right:20%;
+    margin-left:20%;
+
+  }
+
+  #weird{
+    margin-left: 0px;
+    margin-right: 0px;
+
+  }
+
+  form{
+    display:flex;
+    flex-direction: column;
+  }
+
+  input[id="zipCode"]{
+    width: 50%;
+
+  }
+  div:not(.wrapper,.zip,.option){
+    display: flex;
+    align-items: flex-start;
+
+  }
+
+  div:not(.wrapper,.zip,.option) > *{
+    flex-basis: 100%;
+
+  }
+
+.zip{
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+.zip label{
+  flex-basis: 50%;
+}
+
+.zip input{
+  flex-basis: 25%;
+}
+
+
+
+
+  footer{
+    margin-right: 25%;
+    margin-left: 25%;
+  }
+
+}
+
+
+
+
+font-family: 'Bitter', serif;
+font-family: 'Playfair Display', serif;
