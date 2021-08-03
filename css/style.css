@@ -96,6 +96,7 @@ input[type="email"]::placeholder{
 input[type="text"]:focus,
 input[type="email"]:focus{
   text-align: left;
+  border: solid blue 2px;
 }
 select option[value=""]{
   color: gray;
@@ -184,7 +185,7 @@ footer{
 }
 
 .zip input{
-  flex-basis: 25%;
+  flex-basis: 15%;
 }
 
 
