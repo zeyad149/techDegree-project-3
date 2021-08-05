@@ -72,7 +72,7 @@ select {
   padding-bottom: 10px;
   padding-top: 10px;
   margin-top: 10px;
-  border-color: white;
+  border: 2px white solid;
   text-decoration: none;
 }
 input[type="radio"],
@@ -94,19 +94,16 @@ input[type="email"]::placeholder{
 }
 
 input[type="text"]:focus,
-input[type="email"]:focus{
+input[type="email"]:focus,
+input[type="tel"]:focus,
+select:focus,
+textarea:focus{
   text-align: left;
   border: solid blue 2px;
 }
 select option[value=""]{
   color: gray;
 
-}
-
-}
-select{
-
-  margin-bottom: 50px;
 }
 
 input[id="zipCode"]{
@@ -161,17 +158,15 @@ footer{
 
   input[id="zipCode"]{
     width: 50%;
-
   }
+
   div:not(.wrapper,.zip,.option){
     display: flex;
-    align-items: flex-start;
-
+    align-items: baseline;
   }
 
   div:not(.wrapper,.zip,.option) > *{
     flex-basis: 100%;
-
   }
 
 .zip{
@@ -185,21 +180,9 @@ footer{
 }
 
 .zip input{
-  flex-basis: 15%;
+  flex-basis: 12.5%;
 }
-
-
-
-
   footer{
     margin-right: 25%;
     margin-left: 25%;
   }
-
-}
-
-
-
-
-font-family: 'Bitter', serif;
-font-family: 'Playfair Display', serif;
