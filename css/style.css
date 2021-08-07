@@ -140,8 +140,8 @@ footer{
 @media(min-width: 768px){
 
   .wrapper{
-    margin-right:20%;
-    margin-left:20%;
+    margin-right:14%;
+    margin-left:14%;
 
   }
 
@@ -151,24 +151,27 @@ footer{
 
   }
 
-  form{
-    display:flex;
-    flex-direction: column;
-  }
+
 
   input[id="zipCode"]{
     width: 50%;
   }
 
-  div:not(.wrapper,.zip,.option){
+  .z {
     display: flex;
     align-items: baseline;
   }
 
-  div:not(.wrapper,.zip,.option) > *{
-    flex-basis: 100%;
+
+  .z label {
+    flex-basis: 25%;
   }
 
+  .z input,
+  .z select{
+    flex-basis: 75%;
+  }
+  
 .zip{
   display: flex;
   align-items: center;
@@ -176,12 +179,13 @@ footer{
 }
 
 .zip label{
-  flex-basis: 50%;
+  flex-basis: 25%;
 }
 
 .zip input{
-  flex-basis: 12.5%;
+  flex-basis: 25%;
 }
+
   footer{
     margin-right: 25%;
     margin-left: 25%;
