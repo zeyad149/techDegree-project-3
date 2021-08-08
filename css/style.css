@@ -171,7 +171,7 @@ footer{
   .z select{
     flex-basis: 75%;
   }
-  
+
 .zip{
   display: flex;
   align-items: center;
@@ -186,7 +186,8 @@ footer{
   flex-basis: 25%;
 }
 
-  footer{
+  footer {
     margin-right: 25%;
     margin-left: 25%;
   }
+}
